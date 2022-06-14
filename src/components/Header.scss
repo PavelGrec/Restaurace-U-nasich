@@ -1,0 +1,18 @@
+header{
+    overflow: hidden;
+    display: block;
+    position: relative;
+    height: 250px;
+    background-color: antiquewhite;
+}
+#RollingFrame{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

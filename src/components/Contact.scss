@@ -1,0 +1,13 @@
+a{
+    display: block;
+    text-decoration:underline;
+    color: rgb(45, 45, 45)!important;
+}
+
+@media screen and (max-width:550px) {
+    .flexCenter{
+        flex-direction: column;
+        width: inherit;
+        text-align: center;
+    }
+ }

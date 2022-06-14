@@ -1,0 +1,113 @@
+//variables
+$green:#4fbd50;
+
+//template
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  list-style: none;
+  a{text-decoration: none;}
+  li{list-style: none;}
+}
+nav, header,main,footer{
+  width: 100vw;
+
+  display:flex;
+  justify-content: center;
+  .width{
+    padding-left:  1rem;
+    padding-right:  1rem;
+    width:100%;
+    max-width:1200px;
+  }
+  .menuWidth{
+    padding-left:  1rem;
+    padding-right:  1rem;
+    width:100%;
+    max-width:800px;
+  }
+}
+.flexCenter{
+  display: flex;
+  justify-content: center;
+}
+h1{
+  text-align: center;
+  margin: 4rem 0rem;
+}
+.bg{
+  background-color: $green;
+}
+.flex{display: flex}
+.half{
+  width: 50%;
+}
+.sectionPadding{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.sectionExtraPadding{
+  padding-top: 6rem;
+  padding-bottom: 9rem;
+}
+.textCenter{
+  text-align: center;
+}
+.sectionCards{
+  flex-wrap: wrap;
+}
+h3{
+  margin-top: 3rem;
+}
+p{margin-top: 1rem;}
+
+
+
+.listek{
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto max-content; 
+  grid-template-areas: "left right"; 
+  align-items: end; 
+  gap: 0 0.25rem;
+}
+.left{
+  grid-area: left;
+  position: relative;
+  overflow: hidden;
+}
+.right{
+  grid-area: right;
+}
+.left::after{
+  position: absolute;
+  padding-left: 1.25ch;
+  width: max-content;
+  content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+  text-align: right;
+}
+span{
+  font-weight: 700;
+}
+html {
+  scroll-behavior: smooth;
+}
+.mt{
+  padding-top: 2rem;
+}
+
+//phone
+@media screen and (max-width:550px) {
+  .listek{
+    padding-bottom: 1rem;
+  }
+}
